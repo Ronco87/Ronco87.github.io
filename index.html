@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Ronco87</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background-color: #0d1117; color: #c9d1d9; line-height: 1.6; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; }
+        header { text-align: center; padding: 3rem 0; border-bottom: 1px solid #21262d; }
+        h1 { color: #f0f6fc; font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #8b949e; font-size: 1.2rem; }
+        .section-title { color: #f0f6fc; margin: 3rem 0 1.5rem; font-size: 1.8rem; display: flex; align-items: center; gap: 0.5rem; }
+        .grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+        @media (min-width: 600px) { .grid { grid-template-columns: 1fr 1fr; } }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1.5rem; transition: transform 0.2s, border-color 0.2s; text-decoration: none; color: inherit; display: flex; flex-direction: column; justify-content: space-between; }
+        .card:hover { transform: translateY(-3px); border-color: #58a6ff; }
+        .card h3 { color: #58a6ff; margin-bottom: 0.5rem; font-size: 1.3rem; }
+        .card p { color: #8b949e; font-size: 0.95rem; margin-bottom: 1.5rem; }
+        .btn { display: inline-block; background: #21262d; color: #c9d1d9; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.9rem; font-weight: 600; text-align: center; border: 1px solid #30363d; }
+        .card:hover .btn { background: #238636; color: #ffffff; border-color: #2ea043; }
+        footer { text-align: center; margin-top: 5rem; color: #8b949e; font-size: 0.9rem; border-top: 1px solid #21262d; padding-top: 2rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Encabezado de tu perfil -->
+        <header>
+            <h1>Ronco87</h1>
+            <p class="subtitle">Desarrollador & Creador de Proyectos</p>
+        </header>
+
+        <!-- Sección de Proyectos -->
+        <main>
+            <h2 class="section-title">💼 Mis Proyectos</h2>
+            <div class="grid">
+                
+                <!-- PROYECTO 1 (Plantilla) -->
+                <a href="https://github.com" class="card" target="_blank">
+                    <div>
+                        <h3>Proyecto Ejemplo 1</h3>
+                        <p>Esta es una descripción breve de tu primer gran proyecto. Cuéntale a la gente qué tecnologías usaste y qué problema resuelve.</p>
+                    </div>
+                    <span class="btn">Ver Proyecto</span>
+                </a>
+
+                <!-- PROYECTO 2 (Plantilla) -->
+                <a href="https://github.com" class="card" target="_blank">
+                    <div>
+                        <h3>Proyecto Ejemplo 2</h3>
+                        <p>Descripción de tu segundo proyecto. Puedes añadir tantos bloques de estos como quieras duplicando este fragmento de código.</p>
+                    </div>
+                    <span class="btn">Ver Proyecto</span>
+                </a>
+
+            </div>
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>&copy; 2026 Ronco87. Hecho con ❤️ en GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
